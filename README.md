@@ -97,4 +97,6 @@ To test the secured endpoints in Swagger (click the padlock icon to authorize), 
 - **Connecting to the DB directly:** If you want to run SQL commands directly, you can jump into the container by running:
   `docker exec -it financetracker-postgres psql -U postgres -d financetracker`
 
+### API DOCUMENTATION 🔑
+Provided locally via auto-generated Swagger UI. Once the application is running, the interactive API documentation is fully accessible at: http://localhost:8080/swagger-ui.html
 Enjoy tracking those finances! 🎉
