@@ -24,9 +24,18 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(AccessDeniedException.class)
     public ResponseEntity<Map<String, String>> handleAccessDenied(AccessDeniedException ex) {
         Map<String, String> response = new HashMap<>();
-        response.put("error", "Forbidden (Analyst Can't Delete a Record)");
+        response.put("error", "Forbidden");
         response.put("message", "You do not have permission to access this resource");
         return new ResponseEntity<>(response, HttpStatus.FORBIDDEN);
+    }
+
+    @ExceptionHandler(org.springframework.security.core.AuthenticationException.class)
+    public ResponseEntity<Map<String, String>> handleAuthenticationException(
+            org.springframework.security.core.AuthenticationException ex) {
+        Map<String, String> response = new HashMap<>();
+        response.put("error", "Unauthorized");
+        response.put("message", "Full authentication is required to access this resource");
+        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -39,8 +48,9 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, String>> handleGeneralException(Exception ex) {
+        ex.printStackTrace();
         Map<String, String> response = new HashMap<>();
-        response.put("error", "Internal Server Error & Viewer Can't Create a Record");
+        response.put("error", "Internal Server Error ( Analyst or Viewer Can't Create a Record )");
         response.put("message", ex.getMessage());
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
