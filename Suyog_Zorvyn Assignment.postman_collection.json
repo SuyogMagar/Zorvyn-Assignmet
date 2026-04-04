@@ -1,0 +1,748 @@
+{
+	"info": {
+		"_postman_id": "6253b972-64a5-425f-bc14-2943367a4c68",
+		"name": "Suyog Zorvyn Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32826944"
+	},
+	"item": [
+		{
+			"name": "Financial_Records",
+			"item": [
+				{
+					"name": "Admin GET Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Viewer GET Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "viewer123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "viewer@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 1500.00,\n  \"type\": \"INCOME\",\n  \"category\": \"Salary\",\n  \"description\": \"Monthly Salary\",\n  \"date\": \"2026-04-03\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin POST Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 1000.00,\n  \"type\": \"INCOME\",\n  \"category\": \"Bonus\",\n  \"description\": \"Bonus/Incentive \",\n  \"date\": \"2026-03-01\",\n  \"notes\":\"Monthly Salary\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin DELETE Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/records/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analyst GET Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "analyst123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "analyst@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analyst POST Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "analyst123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "analyst@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 5,\n    \"amount\": 15500.00,\n    \"type\": \"INCOME\",\n    \"category\": \"Salary\",\n    \"date\": \"2026-03-01\",\n    \"notes\": \"Monthly Salary\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analyst DELETE Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "analyst123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "analyst@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/records/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"records",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Admin_Users GET Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin_Users POST Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 3,\n        \"name\": \"Viewer Demo\",\n        \"email\": \"viewerDemo@example.com\",\n        \"password\": \"$2a$10$q2iI5s4MbZWQ62IzJSS1WeQxYv7Xg7F5kpOCeJFeGdSs9X1cbmEXe\",\n        \"role\": \"VIEWER\",\n        \"status\": \"ACTIVE\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin_Users PATCH Request 1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/7/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin_Users PATCH Request 2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/7/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analyst_Users GET Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "analyst123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "analyst@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Viewer_Users GET Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "viewer123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "viewer@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard_Controller",
+			"item": [
+				{
+					"name": "Total_Income",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/total-income",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"total-income"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Total_Expense",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/total-expense",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"total-expense"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Net_Balance",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/net-balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"net-balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monthly",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/monthly",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"monthly"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monthly_Income",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/monthly-income",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"monthly-income"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category_Wise",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/category-wise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"category-wise"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
