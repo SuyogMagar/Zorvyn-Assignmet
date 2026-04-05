@@ -30,15 +30,98 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/records",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin POST Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 60000.00,\n  \"type\": \"INCOME\",\n  \"category\": \"Bonus\",\n  \"description\": \"Bonus/Incentive \",\n  \"date\": \"2026-02-01\",\n  \"notes\":\"Monthly Salary\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records",
+							"protocol": "https",
+							"host": [
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin DELETE Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records/8",
+							"protocol": "https",
+							"host": [
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"records",
+								"8"
 							]
 						}
 					},
@@ -72,95 +155,16 @@
 							"raw": "{\n  \"amount\": 1500.00,\n  \"type\": \"INCOME\",\n  \"category\": \"Salary\",\n  \"description\": \"Monthly Salary\",\n  \"date\": \"2026-04-03\"\n}\n"
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/records",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"records"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Admin POST Request",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "admin123",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin@example.com",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"amount\": 1000.00,\n  \"type\": \"INCOME\",\n  \"category\": \"Bonus\",\n  \"description\": \"Bonus/Incentive \",\n  \"date\": \"2026-03-01\",\n  \"notes\":\"Monthly Salary\"\n}\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/records",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"records"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Admin DELETE Request",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "admin123",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "admin@example.com",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/records/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"records",
-								"1"
 							]
 						}
 					},
@@ -187,12 +191,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/records",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"records"
@@ -231,12 +236,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/records",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"records"
@@ -246,7 +252,7 @@
 					"response": []
 				},
 				{
-					"name": "Analyst DELETE Request",
+					"name": "Analyst DELETE (Should Fail)",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -270,16 +276,54 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/records/6",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records/9",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"records",
-								"6"
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/records/filter",
+							"protocol": "https",
+							"host": [
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"records",
+								"filter"
 							]
 						}
 					},
@@ -311,12 +355,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
@@ -347,7 +392,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"id\": 3,\n        \"name\": \"Viewer Demo\",\n        \"email\": \"viewerDemo@example.com\",\n        \"password\": \"$2a$10$q2iI5s4MbZWQ62IzJSS1WeQxYv7Xg7F5kpOCeJFeGdSs9X1cbmEXe\",\n        \"role\": \"VIEWER\",\n        \"status\": \"ACTIVE\"\n    }",
+							"raw": "{\n        \"id\": 3,\n        \"name\": \"Suyog Magar\",\n        \"email\": \"SuyogDemo@example.com\",\n        \"password\": \"$2a$10$q2iI5s4MbZWQ62IzJSS1WeQxYv7Xg7F5kpOCeJFeGdSs9X1cbmEXe\",\n        \"role\": \"VIEWER\",\n        \"status\": \"ACTIVE\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -355,12 +400,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
@@ -390,16 +436,17 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/7/deactivate",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users/4/deactivate",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users",
-								"7",
+								"4",
 								"deactivate"
 							]
 						}
@@ -427,16 +474,17 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/7/activate",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users/4/activate",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users",
-								"7",
+								"4",
 								"activate"
 							]
 						}
@@ -444,7 +492,7 @@
 					"response": []
 				},
 				{
-					"name": "Analyst_Users GET Request",
+					"name": "Analyst_Users GET (Should Fail)",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -471,23 +519,23 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users/7",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
-								"users",
-								"7"
+								"users"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Viewer_Users GET Request",
+					"name": "Viewer_Users GET (Should Fail)",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -507,12 +555,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/users",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"users"
@@ -547,12 +596,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/total-income",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/total-income",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
@@ -583,12 +633,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/total-expense",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/total-expense",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
@@ -619,12 +670,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/net-balance",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/net-balance",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
@@ -655,12 +707,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/monthly",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/monthly",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
@@ -691,12 +744,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/monthly-income",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/monthly-income",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
@@ -727,12 +781,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/summary/category-wise",
-							"protocol": "http",
+							"raw": "https://zorvyn-assignment-6djo.onrender.com/api/summary/category-wise",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"zorvyn-assignment-6djo",
+								"onrender",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"summary",
